@@ -48,7 +48,18 @@ export const config: WebdriverIO.Config = {
         ['appium', { command: 'appium' }], // Configuração caso o Appium esteja instalado globalmente
     ],
     framework: 'mocha',
-    reporters: ['spec'],
+    reporters: [
+        'spec', // Reporter padrão que exibe os resultados no terminal
+        [
+            'allure',
+            {
+                // Reporter Allure para gerar os resultados em um formato específico
+                outputDir: 'allure-results', // Diretório para armazenar os resultados do Allure
+                disableWebdriverStepsReporting: true, // Desabilita a gravação dos passos do WebDriver no Allure
+                disableWebdriverScreenshotsReporting: true, // Desabilita a gravação das capturas de tela no Allure
+            },
+        ],
+    ],
     mochaOpts: {
         ui: 'bdd',
         timeout: 60000,
