@@ -1,6 +1,6 @@
 # 🎉 Bem-vindo ao Projeto de Testes WebdriverIO QA! 🚀
 
-Este projeto foi desenvolvido para facilitar e guiar novos QAs no universo do framework [**WebdriverIO**](https://webdriver.io/), trazendo práticas de automação de testes E2E e API para validar a qualidade e a performance das aplicações.
+Este projeto foi desenvolvido para facilitar e guiar novos QAs no universo do framework [**WebdriverIO**](https://webdriver.io/), trazendo práticas de automação de testes E2E (WEB e MOBILE) e API para validar a qualidade e a performance das aplicações.
 
 ---
 
@@ -71,7 +71,7 @@ docker compose up
 
 Organizamos o projeto para proporcionar máxima clareza e organização:
 
--   **Testes E2E e API**: scripts organizados para facilitar a manutenção e compreensão dos testes.
+-   **Testes WEB, MOBILE e API**: scripts organizados para facilitar a manutenção e compreensão dos testes.
 -   **Fixtures e Comandos WebdriverIO**: separados por contexto, com modularização e reutilização de código.
 -   **Ambientes (.env)**: variáveis sensíveis e específicas por ambiente, garantindo segurança e flexibilidade na execução dos testes.
 
